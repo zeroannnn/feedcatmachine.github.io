@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cat feeder</title>
+        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <meta name="discription" content="這是一個貓密餵食器，你可以對你想餵食的貓咪進行餵食" />
+        <meta name="author" content="小安" />
+        <meta name="keywords" content="小安 ,html ,CSS , 貓咪 , 餵食 ,遊戲" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />     
+        <meta http-equiv="refresh" content="300" />  
+    </head>
+
+    <body>
+        <div class="back">
+            <div class="left">
+                <h1>Feed area</h1>
+                <h3>click one or all cat you want to feed</h3>
+                <div class="choose">
+                    <label class="container">Xiaoan
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container">Ronnie
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+    
+                    <label class="container">Wuder
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container">Wulerler
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+    
+                    <label class="container">Hsuan
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+    
+                    <label class="container">All
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <h3>Or Specified Breed</h3>
+                <div class="choose">
+                    <form name="input" action="" method="get">
+                        <input type="text" name="breed" value="ex:British Shorthair" size="24">
+                    </form>
+                </div>
+                
+                <button type="button">Feed</button>
+            </div>
+            <div class="right">
+                <h1>Cat Overview</h1>
+                <script src="./myscript.js"> </script>
+                <div class="cat">
+                    <div class="imgcat">
+                        <img src="貓咪_正常/cat1.jpg" id="click"  onmousedown="secound(this)" onmouseup="first(this)" width="350" alt="This is cat1"/>
+                        <br>
+                        <table>
+                            <tr>
+                                <th id="name">Xiaoan</th>
+                                <th id="breed">British Shorthair</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="imgcat">
+                        <img src="貓咪_正常/cat2.jpg" width="350" alt="This is cat2"/>
+                        <br>
+                        <table>
+                            <tr>
+                                <th id="name">Ronnie</th>
+                                <th id="breed">Russian Blue Cat</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="imgcat">
+                        <img src="貓咪_正常/cat3.jpg" width="350" alt="This is cat3"/>
+                        <br>
+                        <table>
+                            <tr>
+                                <th id="name">Wuder</th>
+                                <th id="breed">Russian Blue Cat</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <br>
+                <div class="cat">
+                    <div class="imgcat">
+                        <img src="貓咪_正常/cat4.jpg" width="350" alt="This is cat4"/>
+                        <br>
+                        <table>
+                            <tr>
+                                <th id="name">Wulerler</th>
+                                <th id="breed">Birman Cat</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="imgcat">
+                        <img src="貓咪_正常/cat5.jpg" width="350" alt="This is cat5"/>
+                        <br>
+                        <table>
+                            <tr>
+                                <th id="name">Hsuan</th>
+                                <th id="breed">Russian Blue Cat</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
